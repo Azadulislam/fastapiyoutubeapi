@@ -1,0 +1,143 @@
+playlists
+[
+  {
+    "id": "PLSNRR4BKcowBP0SvNSOU1qmNen2BgeCZk",
+    "title": "Bit Apps",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/LKILDEgZe-M/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowBVqvDq5pkL_QfvkohaSyHS",
+    "title": "AI ChatBot Explained 🔥",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/q_r_5p5vRLQ/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowCpbG-MEqKyF855Ut6dF2MP",
+    "title": "Event Talk",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/S44U3GXNF8U/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowD5yJk8pCdW_K1Yavkk0Mdw",
+    "title": "Remote Job Guideline",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/FofBaiAiLdI/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowBEVOREh3_4sEdPco23YUls",
+    "title": "WordPress Customization 101",
+    "description": "আপনি যদি WordPress Customization শিখতে চান, তাহলে এই Playlist আপনার জন্য 😊",
+    "thumbnail": "https://i.ytimg.com/vi/NQcGxuM8eiU/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowAtd3blWKSzQdtzCCb94nyr",
+    "title": "WordPress Plugin Review",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/Gjab1IFVvg0/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowAplBlVNfqnU7rt7v2zu7Rq",
+    "title": "Promo Content",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/UGMRD1HBAGA/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowBkHYYumZffsZ3G52hPqRjc",
+    "title": "Modern HTML Tutorial Bangla",
+    "description": "এই Modern HTML Tutorial Bangla প্লেলিস্ট ফলো করলে আমি আশা করি আপনার আর কোথাও থেকে HTML শিখতে হবে না। আমি এই একটা প্লে-লিস্ট এ ডিটেইলে আপনাকে HTML শিখাব, ইনশাআল্লাহ্‌। তাই আপনি যদি আগ্রিহী হন দেখতে থাকুন।",
+    "thumbnail": "https://i.ytimg.com/vi/gICjCjpSg6M/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowCq8dGxBkz4RxaqJaMhlbwB",
+    "title": "Figma Tutorial Bangla",
+    "description": "Figma is one of the best interface design Software that works as a browser and in this playlist, I will help you to learn Figma.",
+    "thumbnail": "https://i.ytimg.com/vi/SMKFYiRFsY0/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowDMTFWYgMqRHRuohVA6IKiD",
+    "title": "Modern JavaScript Tutorial Bangla",
+    "description": "আপনি যদি JavaScript শিখতে চান, এবং আপনার যদি JavaScript এর উপর বিন্দু মাত্র নলেজ না থেকে তাহলে এই ভিডিও সিরিজ আপনার জন্য।",
+    "thumbnail": "https://i.ytimg.com/vi/KKr5_o4WA_Q/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowAPYptWUEzkbI7nVl82Mojw",
+    "title": "Web Development Full Course",
+    "description": "আপনি যদি Web Development শিখতে চান তাহলে এই প্লে লিস্ট আপনার জন্য। এই প্লে লিস্ট ফলো করলে আমি আশা করি আপনি অনেক ভালো ভাবে Web Development শিখতে পারবেন।",
+    "thumbnail": "https://i.ytimg.com/vi/hj9SEDuPQps/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowCFRWkowTr-0mRymAWO6xUW",
+    "title": "Podcast Intro",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/sWWhW1eJbqg/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowDdthpzXLhB85gT6GMupM2o",
+    "title": "Modern CSS3 Tutorial Bangla",
+    "description": "এই Modern CSS3 Tutorial Bangla প্লেলিস্ট ফলো করলে আমি আশা করি আপনার আর কোথাও থেকে CSS শিখতে হবে না। আমি এই একটা প্লে-লিস্ট এ ডিটেইলে আপনাকে CSS3 শিখাব, ইনশাআল্লাহ্‌। তাই আপনি যদি আগ্রিহী হন দেখতে থাকুন। \n\n🎉 Source Code\n================================== \nhttps://github.com/shovoalways/CSS-Course",
+    "thumbnail": "https://i.ytimg.com/vi/jQEOMPGyySs/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowDvMA9pycWwvqH9Yqkb-0tR",
+    "title": "LinkedIn Client Hunting",
+    "description": "আমারা অনেকেই এখন আর মার্কেটপ্লেস নির্ভর না থেকে একটু স্বাধীনভাবে কাজ করতে চাই এবং ফ্রীলাঞ্চার না থেকে সবার ই নিজের জন্য রিমোট, অন সাইট বা নিজের এজেন্সি নিয়ে কাজ করা উচিৎ। এক্ষেত্রে LinkedIn একটা ভালো পথ হতে পারে, ক্লায়েন্ট বা জব পাবার জন্য।",
+    "thumbnail": "https://i.ytimg.com/vi/uLEauCrWvPg/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowD8Vo0owqLtHhVpSSZ4w6Om",
+    "title": "Tailwind CSS Tutorial",
+    "description": "বর্তমানে CSS এর খুবি জনপ্রিয় একটা framework হচ্ছে  Tailwind CSS এবং এই প্লে লিস্টে আপনি Tailwind CSS শিখবেন।",
+    "thumbnail": "https://i.ytimg.com/vi/7lmoLxbUENM/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowA9O-s5Ek9UuF0QtYxvhJdi",
+    "title": "WordPress WooCommerce Tutorial",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/JP6jY9BF8ac/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowCR6hB6gx6xqOfYVA0JM3hj",
+    "title": "Deep Dive Live Clips",
+    "description": "Deep Dive এর যে লাইভ গুলো হবে তার ছোট ছোট ক্লিপ এখানে থাকবে যাতে আল্প তেই আপনি আপনার যা জানার তা জানতে পারেন।",
+    "thumbnail": "https://i.ytimg.com/vi/bfwQDV7reFE/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowCkeAxfdtTsLqwR0LJYwDaz",
+    "title": "WordPress Plugin Development",
+    "description": "WordPress Plugin Development series এ আপনাকে স্বাগতম। এই সিরিজে আপনই শিখবেন কিভাবে WordPress Plugin বানাতে হয়। এই প্লাগিন কিভাবে WordPress.org তে আপলোড করতে হয়। সেখানে আপলোড করতে কি কি দরকার হয়। মানে একটা প্লাগিনের শুরু থেকে শেষ পর্যন্ত আপনই জানতে পারবেন এই এক ভিডিও সিরিজ থেকে, ইনশাআল্লাহ্‌।",
+    "thumbnail": "https://i.ytimg.com/vi/bgV-OBceMoE/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowCgLwuuKiMJRz4fnV3VE7By",
+    "title": "Visual Studio Code Tutorial",
+    "description": "বেশ কিছুদিন ধরে Visual Studio Code কে আমার ডিফল্ট কোড এডিটর হিসেবে ব্যাবহার করছি। এই সময়ে আমার অবিজ্ঞতা, কিছু keybord shortcut ইত্যাদি নিয়ে আজ এই ভিডিওতে কথা বলছি। এই ভিডিও সম্পর্কে আপনার মতামত কমেন্টে জানান।",
+    "thumbnail": "https://i.ytimg.com/vi/JbKipt29YFc/default.jpg",
+    "items": []
+  },
+  {
+    "id": "PLSNRR4BKcowBAQzTQWnqfzrooCspDLRVO",
+    "title": "LinkedIn Skill Assessment Test",
+    "description": "",
+    "thumbnail": "https://i.ytimg.com/vi/z_ge3ajQ3gs/default.jpg",
+    "items": []
+  }
+]

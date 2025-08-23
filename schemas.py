@@ -31,11 +31,46 @@ class ChannelDetails(BaseModel):
     key: str
 
 class PlaylistItem(BaseModel):
-    id: str
     title: str
-    description: str
+    key: str
+    description: Optional[str] = None
+    playlist_id: str
     thumbnail: str
 
 class PlaylistInfo(BaseModel):
-    id: str
     title: str
+    key: str
+    description: Optional[str] = None
+    thumbnail: str
+    items: list[PlaylistItem] = []
+
+
+class PlaylistKeys(BaseModel):
+    keys: list[str]
+
+
+class PlaylistItemCreate(BaseModel):
+    key: str
+    title: str
+    playlist_id: int
+    description: Optional[str] = None
+    thumbnail: str
+
+class PlaylistCreate(BaseModel):
+    title: str
+    key: str
+    thumbnail: str
+    items: list[PlaylistItemCreate]
+
+class PlaylistItemRead(BaseModel):
+    id: int
+    title: str
+
+    model_config = {"from_attributes": True}
+
+class PlaylistRead(BaseModel):
+    id: int
+    title: str
+    items: list[PlaylistItemRead] = []
+
+    model_config = {"from_attributes": True}

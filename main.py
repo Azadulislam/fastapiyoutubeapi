@@ -164,13 +164,87 @@ async def get_playlist_by_channel(channel_key: str):
         playlist_title = playlist["snippet"]["title"]
         returned_playlists.append(
             schemas.PlaylistInfo(
-                id=playlist_id,
-                title=playlist_title
+                key=playlist_id,
+                title=playlist_title,
+                description=playlist["snippet"]["description"],
+                thumbnail=playlist["snippet"]["thumbnails"]["default"]["url"]
             )
         )
 
     redis = aioredis.from_url("redis://localhost", encoding="utf8", decode_responses=True)
     await redis.set('playlists', json.dumps([c.dict() for c in returned_playlists]))
+    return returned_playlists
+
+@app.post("/save-playlist", response_model=list[schemas.PlaylistInfo])
+async def save_playlist(playlist_keys: list[str], db: Session = Depends(get_db)):
+    # Find the playlist containing the video
+
+    redis = aioredis.from_url("redis://localhost", encoding="utf8", decode_responses=True)
+    playlist_data = await redis.get('playlists')
+    playlists = []
+    if not playlist_data:
+        raise HTTPException(status_code=404, detail="No playlists found in Redis")
+
+    try:
+        playlists = json.loads(playlist_data)
+        if not isinstance(playlists, list):
+            raise ValueError("Invalid playlist data format in Redis")
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=500, detail="Failed to parse playlist data from Redis")\
+
+    matching_playlists = [p for p in playlists if p.get("key") in playlist_keys]
+    returned_playlists = []
+    for playlist in matching_playlists:
+        # Ensure required fields exist
+        items = []
+        playlist_id = playlist["key"]
+        next_page_token = None
+
+        while True:
+            playlist_items_url = (
+                f"{settings.youtube_api_url}playlistItems?part=snippet"
+                f"&playlistId={playlist_id}&maxResults=50"
+                f"&key={settings.youtube_api_key}"
+                f"{f'&pageToken={next_page_token}' if next_page_token else ''}"
+            )
+            try:
+                response = requests.get(playlist_items_url)
+                if response.status_code != 200:
+                    raise HTTPException(status_code=response.status_code, detail="Could not retrieve playlist items")
+                data = response.json()
+            except requests.RequestException as e:
+                raise HTTPException(status_code=500, detail=f"Failed to fetch playlist items: {str(e)}")
+
+            for item in data.get("items", []):
+                snippet = item.get("snippet", {})
+                if not all(key in snippet for key in ["resourceId", "title", "description", "thumbnails"]):
+                    continue
+                if "videoId" not in snippet["resourceId"] or "default" not in snippet["thumbnails"]:
+                    continue
+                items.append(
+                    schemas.PlaylistItem(
+                        key=snippet["resourceId"]["videoId"],
+                        title=snippet["title"],
+                        playlist_id=playlist_id,
+                        description=snippet["description"],
+                        thumbnail=snippet["thumbnails"]["default"]["url"],
+                    )
+                )
+
+            next_page_token = data.get("nextPageToken")
+            if not next_page_token:
+                break
+        # Create playlist in database
+        playlist_info = schemas.PlaylistInfo(
+            key=playlist['key'],
+            title=playlist["title"],
+            description=playlist["description"],
+            thumbnail=playlist["thumbnail"],
+            items=items
+        )
+        crud.create_playlist(db=db, playlist=playlist_info)
+        returned_playlists.append(playlist_info)
+
     return returned_playlists
 
 @app.get("/playlistitems/{playlist_key}", response_model=schemas.PlaylistInfo)
@@ -200,3 +274,7 @@ def get_playlist_items_by_playlist(playlist_key: str):
         items=playlist_items,
     )
  
+
+@app.post("/playlists", response_model=schemas.PlaylistRead)
+def create_playlist_endpoint(playlist: schemas.PlaylistCreate, db: Session = Depends(get_db)):
+    return create_playlist_with_items(db, playlist)
